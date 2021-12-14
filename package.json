@@ -1,0 +1,58 @@
+{
+  "name": "@loopback/social-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "^10.16 || 12 || 14 || 16"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "clean": "lb-clean *social-app*.tgz dist *.tsbuildinfo package",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run rebuild",
+    "test": "lb-mocha \"dist/__tests__/**/*.js\"",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js",
+    "verify": "npm pack && tar xf loopback-photo-list*.tgz && tree package && npm run clean",
+    "premigrate": "npm run build ",
+    "migrate": "node ./dist/migrate",
+    "preopenapi-spec": "npm run build",
+    "openapi-spec": "node ./dist/openapi-spec",
+    "rebuild": "npm run clean && npm run build",
+    "prestart": "npm run rebuild",
+    "start": "node ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@loopback/boot": "^4.0.0",
+    "@loopback/core": "^3.0.0",
+    "@loopback/repository": "^4.0.0",
+    "@loopback/rest": "^11.0.0",
+    "@loopback/rest-explorer": "^4.0.0",
+    "@loopback/service-proxy": "^4.0.0",
+    "loopback-connector-rest": "^4.0.1",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^8.0.0",
+    "@loopback/eslint-config": "^12.0.0",
+    "@loopback/http-caching-proxy": "^3.0.0",
+    "@loopback/repository": "^4.0.0",
+    "@loopback/testlab": "^4.0.0",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^10.17.60",
+    "eslint": "^7.32.0",
+    "lodash": "^4.17.21",
+    "typescript": "~4.5.2"
+  }
+}

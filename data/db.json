@@ -1,0 +1,18 @@
+{
+  "ids": {
+    "Photo": 5,
+    "PhotoList": 3
+  },
+  "models": {
+    "Photo": {
+      "1": "{\"title\":\"Take over the galaxy\",\"desc\":\"MWAHAHAHAHAHAHAHAHAHAHAHAHAMWAHAHAHAHAHAHAHAHAHAHAHAHA\",\"photoListId\":1,\"id\":1}",
+      "2": "{\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"photoListId\":1,\"id\":2}",
+      "3": "{\"title\":\"play space invaders\",\"desc\":\"Become the very best!\",\"photoListId\":2,\"id\":3}",
+      "4": "{\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"photoListId\":1,\"id\":4}"
+    },
+    "PhotoList": {
+      "1": "{\"title\":\"Sith lord's check list\",\"color\":\"blue\",\"id\":1}",
+      "2": "{\"title\":\"My daily chores\",\"color\":\"red\",\"id\":2}"
+    }
+  }
+}

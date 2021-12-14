@@ -1,0 +1,28 @@
+: 1639406324:0;gsb
+: 1639406344:0;git checkout -b "feature/challenge_jesusalc"
+: 1639475261:0;pnpm i
+: 1639475282:0;updated package json
+: 1639475692:0;HOST=0.0.0.0 PORT=3000 npm start
+: 1639475813:0;lb4 rest-crud --datasource db --model Comment
+: 1639475848:0;lb4 model  Comment
+: 1639475965:0;gsb
+: 1639476004:0;lb4 rest-crud
+: 1639476078:0;pnpm i 
+: 1639476138:0;pnpm update
+: 1639476164:0;pnpm i 
+: 1639476213:0;lb4 repository
+: 1639476237:0;pnpm update -g
+: 1639476328:0;lb4 repository
+: 1639476386:0;rm -rf node_modules
+: 1639476514:0;pnpm i 
+: 1639477487:0;lb4 relation
+: 1639481933:0;pnpm start
+: 1639482102:0;rm -rf dist
+: 1639482117:0;HOST=0.0.0.0 PORT=3000 npm start
+: 1639482281:0;pwd
+: 1639487847:0;HOST=0.0.0.0 PORT=3000 npm start
+: 1639488570:0;gsb
+: 1639492031:0;put added photo commment and subcomment model and controllers
+: 1639492048:0;gsb
+: 1639492050:0;grv
+: 1639492055:0;push 
